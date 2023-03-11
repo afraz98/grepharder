@@ -12,5 +12,11 @@ fn main() {
     .get_matches();
 
     let filename = args.get_one::<String>("file").expect("required");
-
+    let f = File::open(filename).unwrap();
+    let reader = BufReader::new(f);
+  
+    for (index, line_) in reader.lines().enumerate() {
+      let line = line_.unwrap();
+      println!("{}: {}", index+1, line);
+    }
 }
