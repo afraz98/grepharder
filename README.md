@@ -1,6 +1,8 @@
 # grepharder
 
-Common Linux system calls implemented in Rust because why not?
+Common Linux system calls implemented in Rust because why not? :crab:
+
+Heavily adapted from examples included in [Rust in Action](https://www.rustinaction.com/) (great book!)
 
 ## grepharder
 
